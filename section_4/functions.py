@@ -103,3 +103,57 @@ mysterious_var = 'Surprise!'
 print(mysterious_var)
 show_truth() # if function ends all the variables in it are destroyed ... unless global
 print(mysterious_var)
+
+### SCOPE NAME #### 
+# scope = the lines in code where variable can properly be recogized and used
+
+def show_truth():
+  global mysterious_var # >>NOTE<<
+  mysterious_var = 'New Surprise!'
+  print(mysterious_var)
+
+mysterious_var = 'Surprise!'
+print(mysterious_var)
+show_truth() # if function ends all the variables in it are destroyed ... unless global
+print(mysterious_var)
+
+### NONE ###
+# eiher a function (custom or pre-defined) returns something or it returns None
+def function_a():
+  var1=2
+  va1=var1+1
+
+print(function_a())
+
+# can override functon
+def function_a():
+  return 2
+
+print(function_a())
+
+def function_a():
+  return None
+
+print(function_a())
+
+def function_a():
+  print("inside")
+
+print(function_a())
+### funda 
+x = None
+if x:
+    print("None is True")
+elif x is False:
+    print ("None is False")
+else:
+    print("None is not True, or False, None is just None") 
+# None is not True, or False, None is just None
+### funda 
+x = None
+if x is None:
+    print('yes')
+if x == None:
+    print('it does')
+#yes
+#it does
