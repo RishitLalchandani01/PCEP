@@ -47,3 +47,24 @@ def break_loop():
   print("\nFor loop finished.")
 
 break_loop()
+
+#pass is used to just make an empty loop/OR CONDITIONAL as a loop with nothing in it gives error like so:
+for i in range(2): #error
+
+for i in range(2):
+    pass # no error
+
+for i in range(2):
+  print("k")
+  pass # no error , do nothing prints k twice
+
+# remember loops can also have else statements simmilar to if's but key diff. in if statements the its either the if or else that runs in this type of else for loops it always runs while the main one may or may not run
+i = 6
+while i < 5:
+    print(i)
+    i += 1
+else:
+    print('else:', i)
+
+#if i val is 5 or greater then else runs
+#ONLY IF BREAK IS INSIDE MAIN BODY OF FOR OR WHILE THEN ELSE IS SKIPPED
