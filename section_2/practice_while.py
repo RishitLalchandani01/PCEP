@@ -5,7 +5,8 @@ while False:
 
 while True:
   print ("hi")
-  break # only breaks out of the inner most loop
+  break # only breaks out of the inner most loop 
+  # break helps end while and for loops
 
 
 while True:
