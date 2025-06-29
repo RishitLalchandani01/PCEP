@@ -36,6 +36,12 @@ def add(variable1, variable2):
 result=add(1,2)
 print('\n',result)
 
+def multiple_retun_functions():
+  return 1
+  return 2 #ignored , no error
+
+print(multiple_retun_functions())
+
 def add_with_defaults(variable1=10, variable2=20):
   #print(variable1 + variable2)
   return variable1 + variable2
