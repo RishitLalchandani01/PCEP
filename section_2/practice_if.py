@@ -4,7 +4,7 @@
 #   < do something >
 # else :
 #   < do something >
-# you can use AND , OR , NOT in boolean expressions
+
 
 # user_age = int(input('What is your age? '))
 #if user_age = 30: # error : SYNTAX ERROR : will not run : expression cannot be assignment target
@@ -24,6 +24,7 @@ else:
     print('You are younger than 30 years')
     print('Congratulations, you qualify!')
 '''
+# you can use AND , OR , NOT in boolean expressions
 age = int(input("Enter your age: "))
 
 if age >= 0 and age <= 9:
@@ -34,6 +35,13 @@ elif age > 18 and age <= 65:
     print("You are an adult!")
 elif age > 65:
     print("Golden ages!")
+
+def answer():
+ ans = input('Do you...? (yes/no): ')
+ if ans.lower() == 'yes' or ans.lower() == 'y':
+   print(f'Positive answer: {ans}')
+ elif ans.lower() == 'no' or ans.lower() == 'n':
+   print(f'Negative answer: {ans}')
 
 ''' 
 # True is a boolean constant in Python , like 1 , 2 , 3 , 4 etc. or a b c d etc.
