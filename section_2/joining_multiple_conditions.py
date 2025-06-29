@@ -125,3 +125,5 @@ def order_of_logical_operators():
     print('not fourteen')
 
 order_of_logical_operators()
+#one can use () to better organize all these bolean operators
+
