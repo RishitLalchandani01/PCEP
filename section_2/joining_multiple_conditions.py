@@ -19,6 +19,8 @@ def answer_using_or():
  elif ans.lower() == 'no' or ans.lower() == 'n':
    print(f'Negative answer: {ans}')
 
+# not of true false
+# not of false is true
 def divide_using_not(a, b):
     if not b == 0:
         print("b is not 0, dividing")
