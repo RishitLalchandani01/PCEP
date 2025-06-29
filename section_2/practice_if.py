@@ -24,6 +24,17 @@ else:
     print('You are younger than 30 years')
     print('Congratulations, you qualify!')
 '''
+age = int(input("Enter your age: "))
+
+if age >= 0 and age <= 9:
+    print("You are a child!")
+elif age > 9 and age <= 18:
+    print("You are an adolescent!")
+elif age > 18 and age <= 65:
+    print("You are an adult!")
+elif age > 65:
+    print("Golden ages!")
+
 ''' 
 # True is a boolean constant in Python , like 1 , 2 , 3 , 4 etc. or a b c d etc.
 if True:
