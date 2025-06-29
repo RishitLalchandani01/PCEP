@@ -38,8 +38,90 @@ using_and_1()
 
 user_age = int(input('What is your age? '))
 user_country = input('What is your country? ')
-if ((not user_country == 'Germany') and user_age < 25) or \
-   (user_country == 'Germany' and user_age < 23):
+if not user_country == 'Germany' and user_age < 25 or \
+   user_country == 'Germany' and user_age < 23:
     print('You qualify!')
 else:
     print('You don\'t qualify!')
+
+# Operator Precendence : NOT , AND , OR
+# in above line 41 , first python will evaluate NOT of country , then AND ... if it is true do not eval OR part
+# https://docs.python.org/3/reference/expressions.html#operator-precedence 
+# https://stackoverflow.com/questions/16679272/priority-precedence-of-the-logical-operators-order-of-operations-for-not-an 
+def order_of_logical_operators():
+  a = 'apple'
+  b = 'banana'
+  c = 'carrots'
+  if c == 'carrots' and a == 'apple' or b == 'BELGIUM': # True
+    print('one')
+  else:
+    print('not one')
+  
+  # Note this one, which might surprise you:
+  if c == 'CANADA' and a == 'apple' or b == 'banana': #True
+    print('two')
+  else:
+    print('not two')
+  
+  # ... it is the same as:
+  if (c == 'CANADA' and a == 'apple') or b == 'banana': #True
+    print('three')
+  else:
+    print('not three')
+  
+  if c == 'CANADA' and (a == 'apple' or b == 'banana'): #FALSE
+    print('four')
+  else:
+    print('not four')
+  
+  if c == 'CANADA' and a == 'apple' or b == 'BELGIUM': #False
+    print('five')
+  else:
+    print('not five')
+    
+  if c == 'CANADA' or a == 'apple' and b == 'banana': #True
+    print('six')
+  else:
+    print('not six')
+  
+  if c == 'CANADA' or (a == 'apple' and b == 'banana'): #True
+    print('seven')
+  else:
+    print('not seven')
+  
+  if (c == 'carrots' and a == 'apple') or b == 'BELGIUM': #True
+    print('eight')
+  else:
+    print('not eight')
+    
+  if c == 'carrots' and (a == 'apple' or b == 'BELGIUM'): #True
+    print('nine')
+  else:
+    print('not nine')
+    
+  if a == 'apple' and b == 'banana' or c == 'CANADA': #True
+    print('ten')
+  else:
+    print('not ten')
+    
+  if (a == 'apple' and b == 'banana') or c == 'CANADA': #True
+    print('eleven')
+  else:
+    print('not eleven')
+    
+  if a == 'apple' and (b == 'banana' or c == 'CANADA'): #True
+    print('twelve')
+  else:
+    print('not twelve')
+  
+  if a == 'apple' and (b == 'banana' and c == 'CANADA'):# False
+    print('thirteen')
+  else:
+    print('not thirteen')
+    
+  if a == 'apple' or (b == 'banana' and c == 'CANADA'): #True
+    print('fourteen')
+  else:
+    print('not fourteen')
+
+order_of_logical_operators()
