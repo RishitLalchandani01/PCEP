@@ -43,6 +43,15 @@ def answer():
  elif ans.lower() == 'no' or ans.lower() == 'n':
    print(f'Negative answer: {ans}')
 
+def divide(a, b):
+    if not b == 0:
+        print("b is not 0, dividing")
+        return a / b
+    else:
+       print("b is not 0, cannot divide")
+
+divide(10,5)
+divide(10,0)
 ''' 
 # True is a boolean constant in Python , like 1 , 2 , 3 , 4 etc. or a b c d etc.
 if True:
