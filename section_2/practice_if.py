@@ -1,10 +1,10 @@
-# if < condition > :
+# if < boolean condition > :
 #   < do something >
-# elif < condition > :
+# elif < boolean condition > :
 #   < do something >
 # else :
 #   < do something >
-# where < condition > is boolean expression that results in True or False
+# you can use AND , OR , NOT in boolean expressions
 
 # user_age = int(input('What is your age? '))
 #if user_age = 30: # error : SYNTAX ERROR : will not run : expression cannot be assignment target
@@ -13,7 +13,7 @@
 #  print('You are not 30 years old')
   
 ''' 
-if user_age > 30:
+if user_age > 30 :
     print('You are over 30 years old')
     print('Sorry, you do not qualify')
     print('You will be contacted if you are selected for the trial')
@@ -21,7 +21,7 @@ elif user_age == 30:
     print('You are exactly 30 years old')
     print('You will need to meet additional conditions to qualify')
 else:
-    print('You are 30 years old or younger')
+    print('You are younger than 30 years')
     print('Congratulations, you qualify!')
 '''
 ''' 
@@ -32,7 +32,12 @@ elif False:
     print('This will never run')
 else:
      print("This will never run either")
-
+if -1:
+  print("truthy")
+elif 0:
+  print("true")
+else:
+  print("falsy")
 # 1 is True in Python , like True , 0 is False in Python , like False
 # ACTUALLY 0 is False , non zero is True
 
@@ -54,6 +59,12 @@ if 0:
 else:
   print('yyyy')
 
+if -1:
+  print("truthy")
+elif 0:
+  print("true")
+else:
+  print("falsy")
 ''' 
 # The Basics
 is_old=False # assignment statement
