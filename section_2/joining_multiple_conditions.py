@@ -33,3 +33,13 @@ def divide_using_not(a, b):
 #divide_using_not(10,0)
 #answer_using_or()
 using_and_1()
+
+# NOTE : you can use 'back' slash \ if your lines of code are too large
+
+user_age = int(input('What is your age? '))
+user_country = input('What is your country? ')
+if ((not user_country == 'Germany') and user_age < 25) or \
+   (user_country == 'Germany' and user_age < 23):
+    print('You qualify!')
+else:
+    print('You don\'t qualify!')
