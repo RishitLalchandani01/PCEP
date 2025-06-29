@@ -5,6 +5,7 @@
 # else :
 #   < do something >
 
+# NOTE = is assignment operator and == is comparison
 
 # user_age = int(input('What is your age? '))
 #if user_age = 30: # error : SYNTAX ERROR : will not run : expression cannot be assignment target
