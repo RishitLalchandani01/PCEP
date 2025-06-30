@@ -79,3 +79,7 @@ top_cities = ['New York City', 'Los Angeles', 'Singapore', 'Chicago', 'Houston',
 del top_cities # deletes the list itself
 print(top_cities)
 # NameError: name 'top_cities' is not defined
+
+top_cities = ['New York City', 'Los Angeles', 'Singapore', 'Chicago', 'Houston', 'Phoenix']
+# del top_cities [] # SyntaxError
+
