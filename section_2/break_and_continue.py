@@ -68,3 +68,11 @@ else:
 
 #if i val is 5 or greater then else runs
 #ONLY IF BREAK IS INSIDE MAIN BODY OF FOR OR WHILE THEN ELSE IS SKIPPED
+
+while True:
+  print ("hi")
+  while True:
+    print ("bye")
+    break # only breaks out of the inner most loop
+
+# break statement doesn't delete inner while loop js immediately stops it
