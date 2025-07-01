@@ -74,5 +74,5 @@ while True:
   while True:
     print ("bye")
     break # only breaks out of the inner most loop
-
+# in simple terms break exits loop
 # break statement doesn't delete inner while loop js immediately stops it
