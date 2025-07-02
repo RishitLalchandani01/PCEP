@@ -9,6 +9,8 @@ def simple_generator_function():
   yield 4
   yield 5
 
+#IMP: return ends the function while, yield just pauses it
+
 generator_obj=simple_generator_function()
 print(next(generator_obj)) #1
 print(next(generator_obj)) #2
