@@ -7,6 +7,9 @@ def SayHiInfinite(i):
 j=0
 SayHiInfinite(j)
 ''' 
+
+#recursion is a function calling it self
+
 def SayHi10Times(i):
   SayHi10Times(i)
   if i<10:
