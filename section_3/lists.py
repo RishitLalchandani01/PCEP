@@ -23,8 +23,11 @@ print(grocery_list[1:1]) # NOTE :- prints empty list []
 print(grocery_list[-1:-2]) 
 print(grocery_list[1:]) # print all elements from 1 to end 
 print(grocery_list[:3]) # print all elements from start to 2 (3 excluded)
-print(grocery_list[10:15]) # print empty list [] 
 
+
+
+print(grocery_list[10:15]) # print empty list [] 
+print(grocery_list[0:10]) #print whole list
 
 
 # SLICING gives you a new list
