@@ -19,3 +19,9 @@ def slicing():
   reversed_list = my_list[::-1]  # [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
   # Slice from index 1 to 7 with a step of 3
   specific_slice = my_list[1:8:3]  # [2, 5, 8]
+
+def pop_vs_remove():
+  mylist = ["a", "b", "c"]
+  mylist.remove("c")  # removes the first element that has value "c"
+  mylist.pop(1)  # removes element 1 from the list (remember indexing starts at zero)
+  # in pop index is optional
